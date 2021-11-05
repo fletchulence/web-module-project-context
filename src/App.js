@@ -11,6 +11,14 @@ import ShoppingCart from './components/ShoppingCart';
 import { ProductContext } from './contexts/ProductContext';
 import { CartContext } from './contexts/CartContext';
 
+/**TODO: NOTES
+ * IMPORT CONTEXT AFTER CREATING THEM IN CONTEXTS FOLDER
+ * COMPONENT: IMPORT 2 THINGS -- CONTEXT AND THE USECONTEXT HOOK FROM REACT
+ * RUN USECONTEXT IN EXPORT BEFORE RETRUN
+ * DESTRUCTURE YOUR VALUES BEING PASSED IN FROM PROVIDER
+ *  
+ */
+
 function App() {
 	const [products] = useState(data);
 	const [cart, setCart] = useState([]);
@@ -21,6 +29,12 @@ function App() {
 		//! spread cart and then add the item
 		setCart([...cart, item])
 	};
+
+	// const removeItem = cart ={
+	// 	setCart(cart.filter(item=>{
+
+	// 	}))
+	// }
 
 	return (
 		<div className="App">
